@@ -1,0 +1,16 @@
+<?xml version="1.0"?> <!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.taunt.model.Experts" table="Experts">
+		<id name="idExpert" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="mailExpert" column="mailExpert" type="string" />
+		<property name="typeExpert" column="typeExpert" type="string" />
+		<property name="tarifExpert" column="tarifExpert" type="double" />
+		<property name="photoExpert" column="photoExpert" type="string" />
+		<property name="nomExpert" column="nomExpert" type="string" />
+		<property name="prenomExpert" column="prenomExpert" type="string" />
+	</class>
+</hibernate-mapping>

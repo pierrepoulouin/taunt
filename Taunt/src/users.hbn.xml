@@ -1,0 +1,12 @@
+<?xml version="1.0"?> <!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.taunt.model.Users" table="Users">
+		<id name="idUtilisateur" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="mailUtilisateur" column="mailUtilisateur" type="string" />
+		<property name="mdpUtilisateur" column="mdpUtilisateur" type="string" />
+	</class>
+</hibernate-mapping>

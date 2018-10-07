@@ -1,0 +1,12 @@
+<?xml version="1.0"?> <!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.taunt.model.Licence" table="Licence">
+		<id name="idLicence" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="nomLicence" column="nomLicence" type="string" />
+		<property name="typeLicence" column="typeLicence" type="string" />
+	</class>
+</hibernate-mapping>

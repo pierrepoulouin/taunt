@@ -1,0 +1,16 @@
+<?xml version="1.0"?> <!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.taunt.model.CDC" table="cdc">
+		<id name="idCDC" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="typeCDC" column="typeCDC" type="string" />
+		<property name="dureeCDC" column="dureeCDC" type="int" />
+		<property name="nomLicence" column="nomLicence" type="string" />
+		<property name="typeLicence" column="typeLicence" type="string" />
+		<property name="refLicence" column="refLicence" type="int" />
+		<property name="refExpert" column="refExpert" type="int" />
+	</class>
+</hibernate-mapping>

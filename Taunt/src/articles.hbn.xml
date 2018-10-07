@@ -1,0 +1,13 @@
+<?xml version="1.0"?> <!DOCTYPE hibernate-mapping 
+PUBLIC "-//Hibernate/Hibernate Mapping DTD//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+	<class name="com.taunt.model.Articles" table="Articles">
+		<id name="idArticle" type="int">
+			<generator class="increment" />
+		</id>
+		<property name="titreArticle" column="titreArticle" type="string" />
+		<property name="contenuArticle" column="contenuArticle" type="string" />
+		<property name="dateCreation" column="dateCreation" type="date" />
+	</class>
+</hibernate-mapping>
